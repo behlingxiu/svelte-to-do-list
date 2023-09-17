@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Header from "./components/Header.svelte";
+    import List from "./components/List.svelte";
+</script>
+
+<style>
+    .container{
+        width : 500px;
+        background-color : #009579;
+    }
+
+    :global(.container *){
+        font-family: sans-serif;
+    }
+</style>
+
+<div class="container">
+    <Header />
+    <List />
+</div>
